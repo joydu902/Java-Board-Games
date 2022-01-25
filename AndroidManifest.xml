@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fall18_207project.GameCenter">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="fall18_207project.SlidingTile.StartingActivity" />
+        <activity android:name="fall18_207project.SlidingTile.GameActivity" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="fall18_207project.User.LogInActivity"
+            android:label="Log In">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity android:name=".GameCenterActivity" />
+        <activity android:name="fall18_207project.User.SignUpActivity" />
+        <activity
+            android:name="fall18_207project.ScoreBoard.ScoreBoardActivity"
+            android:label="@string/title_activity_stscore_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="fall18_207project.ScoreBoard.UserScoreBoardActivity"
+            android:label="@string/title_activity_stuser_score_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="fall18_207project.ScoreBoard.ScoreBoardAllUsersActivity"
+            android:label="@string/title_activity_stall_users_score_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="fall18_207project.SlidingTile.STChooseLevelActivity" />
+        <activity android:name=".UploadPictureActivity" />
+        <activity android:name="fall18_207project.SlidingTile.GetScoreActivity" />
+        <activity android:name=".NGChooseLevelActivity" />
+        <activity android:name=".NGlistActivity" />
+        <activity android:name="fall18_207project.Simon.SimonMainActivity" />
+        <activity android:name="fall18_207project.Simon.SimonLevelChooseActivity" />
+        <activity android:name="fall18_207project.MatchingCard.MCChoosingLevelActivity" />
+        <activity android:name="fall18_207project.MatchingCard.CardMatchGameActivity" />
+        <activity android:name="fall18_207project.Simon.SimonGameOverActivity" />
+        <activity android:name="fall18_207project.MatchingCard.MCStartingActivity"></activity>
+        <activity android:name="fall18_207project.MatchingCard.MCGameOverActivity"></activity>
+    </application>
+
+</manifest>
